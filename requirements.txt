@@ -1,0 +1,13 @@
+pandas
+nltk
+tqdm
+PyYAML
+matplotlib
+notebook
+torch
+boto3
+python-box
+ensure
+fastapi
+uvicorn
+jinja2
