@@ -1,1 +1,22 @@
 2026-02-23 22:25:15,184 - INFO - main - logging is implemented
+2026-02-27 10:55:38,812 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 10:55:38,918 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 10:55:38,923 - INFO - common - created directory at:artifacts
+2026-02-27 10:58:12,333 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 10:58:12,335 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 10:58:12,340 - INFO - common - created directory at:artifacts
+2026-02-27 10:59:41,691 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 10:59:41,693 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 10:59:41,695 - INFO - common - created directory at:artifacts
+2026-02-27 11:04:20,734 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 11:04:20,737 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 11:04:20,738 - INFO - common - created directory at:artifacts
+2026-02-27 11:04:20,739 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-27 11:04:24,430 - INFO - 2723181015 - file is downloaded
+2026-02-27 11:39:30,437 - INFO - main - stageData Ingestion stage initiated
+2026-02-27 11:39:30,439 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 11:39:30,440 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 11:39:30,448 - INFO - common - created directory at:artifacts
+2026-02-27 11:39:30,450 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-27 11:39:32,986 - INFO - data_ingestion - file is downloaded
+2026-02-27 11:39:33,258 - INFO - main - Stage Data Ingestion stage Completed

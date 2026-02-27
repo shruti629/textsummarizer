@@ -36,9 +36,9 @@ os.makedirs(log_dir, exist_ok=True)
 LOG_FORMAT = "%(asctime)s - %(levelname)s - %(module)s - %(message)s"
 
 logging.basicConfig(
-    level=logging.INFO,   # ✅ fixed (level not levels)
-    format=LOG_FORMAT,    # ✅ string not list
-    handlers=[            # ✅ fixed spelling
+    level=logging.INFO,   
+    format=LOG_FORMAT,    
+    handlers=[            
         logging.FileHandler(log_filepath),
         logging.StreamHandler(sys.stdout)
     ]
