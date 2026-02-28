@@ -20,3 +20,170 @@
 2026-02-27 11:39:30,450 - INFO - common - created directory at:artifacts/data_ingestion
 2026-02-27 11:39:32,986 - INFO - data_ingestion - file is downloaded
 2026-02-27 11:39:33,258 - INFO - main - Stage Data Ingestion stage Completed
+2026-02-27 17:36:16,073 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 17:36:16,209 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 17:36:16,223 - INFO - common - created directory at:artifacts
+2026-02-27 17:40:02,304 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 17:40:02,307 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 17:40:02,310 - INFO - common - created directory at:artifacts
+2026-02-27 17:48:41,791 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 17:48:41,794 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 17:48:41,796 - INFO - common - created directory at:artifacts
+2026-02-27 17:48:41,798 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 17:48:44,399 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 17:48:44,405 - WARNING - _http - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-27 17:48:44,486 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 17:48:44,856 - INFO - _client - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 17:48:47,791 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 17:48:48,073 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 17:48:48,377 - INFO - _client - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 17:48:48,888 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 17:48:49,605 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-27 17:48:50,019 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/spiece.model "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 17:48:50,503 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"
+2026-02-27 17:48:50,836 - INFO - _client - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/spiece.model "HTTP/1.1 200 OK"
+2026-02-27 17:48:51,961 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer.json "HTTP/1.1 404 Not Found"
+2026-02-27 17:48:52,271 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-02-27 17:48:52,576 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 17:48:52,988 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-02-27 17:48:53,262 - INFO - _client - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/special_tokens_map.json "HTTP/1.1 200 OK"
+2026-02-27 17:48:53,551 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-02-27 18:20:01,583 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 18:20:01,586 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 18:20:01,589 - INFO - common - created directory at:artifacts
+2026-02-27 18:20:01,592 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 18:20:02,259 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:20:02,303 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 18:20:02,669 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:20:02,716 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 18:20:03,082 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 18:20:03,384 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-27 18:22:28,021 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 18:22:28,025 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 18:22:28,027 - INFO - common - created directory at:artifacts
+2026-02-27 18:22:28,032 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 18:22:28,586 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:22:28,648 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 18:22:28,960 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:22:29,098 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 18:22:29,405 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 18:22:29,715 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-27 18:25:15,597 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 18:25:15,600 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 18:25:15,602 - INFO - common - created directory at:artifacts
+2026-02-27 18:25:15,603 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 18:25:16,378 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:25:16,428 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 18:25:16,825 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:25:16,928 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 18:25:17,484 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 18:25:17,850 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-27 18:26:15,437 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 18:26:15,440 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 18:26:15,445 - INFO - common - created directory at:artifacts
+2026-02-27 18:26:15,446 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 18:26:16,010 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:26:16,096 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 18:26:16,420 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:26:16,429 - WARNING - _http - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-27 18:26:16,522 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 18:26:16,931 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 18:26:17,238 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-27 18:27:30,510 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 18:27:30,512 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 18:27:30,514 - INFO - common - created directory at:artifacts
+2026-02-27 18:27:30,517 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 18:27:31,070 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:27:31,171 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 18:27:31,581 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:27:31,653 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 18:27:31,990 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 18:27:32,400 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-27 18:27:54,111 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 18:27:54,114 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 18:27:54,118 - INFO - common - created directory at:artifacts
+2026-02-27 18:27:54,121 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 18:27:54,620 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:27:54,723 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 18:27:55,031 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:27:55,133 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 18:27:55,439 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 18:27:55,851 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-27 18:29:50,253 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-27 18:29:50,257 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-27 18:29:50,259 - INFO - common - created directory at:artifacts
+2026-02-27 18:29:50,261 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-27 18:29:51,126 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:29:51,253 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-27 18:29:51,558 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-27 18:29:51,600 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-27 18:29:51,883 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-27 18:29:52,182 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 05:15:31,995 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 05:15:31,998 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 05:15:32,023 - INFO - common - created directory at:artifacts
+2026-02-28 05:15:32,025 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-28 05:15:32,925 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 05:15:33,026 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-28 05:15:33,536 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 05:15:33,639 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-28 05:15:33,947 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-28 05:15:34,356 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 05:21:16,949 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 05:21:16,951 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 05:21:16,953 - INFO - common - created directory at:artifacts
+2026-02-28 05:21:16,955 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-28 05:21:17,594 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 05:21:17,696 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-28 05:21:18,004 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 05:21:18,105 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-28 05:21:18,514 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-28 05:21:18,798 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 05:59:17,951 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 05:59:17,978 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 05:59:17,994 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 05:59:17,997 - INFO - common - created directory at:artifacts
+2026-02-28 05:59:17,997 - ERROR - main - 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'. Did you mean: 'get_data_transformation_config'?
+2026-02-28 09:30:04,842 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 09:30:04,845 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 09:30:04,859 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 09:30:04,870 - INFO - common - created directory at:artifacts
+2026-02-28 09:30:04,872 - ERROR - main - 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'. Did you mean: 'get_data_transformation_config'?
+2026-02-28 09:56:29,383 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 09:56:29,678 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 09:56:30,039 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 09:56:30,073 - INFO - common - created directory at:artifacts
+2026-02-28 09:56:30,102 - ERROR - main - 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'. Did you mean: 'get_data_transformation_config'?
+2026-02-28 20:14:27,624 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:14:27,625 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:14:27,626 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:14:27,636 - INFO - common - created directory at:artifacts
+2026-02-28 20:14:27,636 - ERROR - main - 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'. Did you mean: 'get_data_transformation_config'?

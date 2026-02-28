@@ -11,3 +11,7 @@ ensure
 fastapi
 uvicorn
 jinja2
+transformers
+datasets
+sentencepiece
+protobuf
