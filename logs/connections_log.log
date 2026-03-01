@@ -187,3 +187,698 @@ Traceback (most recent call last):
     data_ingestion_config = config.get_data_ingestion_config()
                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'. Did you mean: 'get_data_transformation_config'?
+2026-02-28 20:28:29,164 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:28:29,167 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:28:29,168 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:28:29,169 - INFO - common - created directory at:artifacts
+2026-02-28 20:28:29,170 - ERROR - main - 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'. Did you mean: 'get_data_transformation_config'?
+2026-02-28 20:33:06,983 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:33:06,985 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:06,986 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:06,986 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:06,987 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:33:09,826 - INFO - data_ingestion - file is downloaded
+2026-02-28 20:33:10,174 - INFO - main - Stage Data Ingestion stage Completed
+2026-02-28 20:33:10,174 - INFO - main - stageData Transformation stage initiated
+2026-02-28 20:33:10,176 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:10,176 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:10,177 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:10,177 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-28 20:33:10,822 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 20:33:10,881 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-28 20:33:11,372 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 20:33:11,432 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-28 20:33:11,853 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-28 20:33:12,172 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 20:33:25,330 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:33:25,333 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:25,333 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:25,334 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:25,334 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:33:25,334 - INFO - data_ingestion - File already exists
+2026-02-28 20:33:25,426 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:33:25,429 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:25,432 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:25,435 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:25,436 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:33:25,436 - INFO - data_ingestion - File already exists
+2026-02-28 20:33:25,448 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:33:25,633 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:33:35,287 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:33:35,289 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:35,290 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:35,291 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:35,291 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:33:35,291 - INFO - data_ingestion - File already exists
+2026-02-28 20:33:35,355 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:33:42,377 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:33:42,379 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:42,380 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:42,381 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:42,382 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:33:42,382 - INFO - data_ingestion - File already exists
+2026-02-28 20:33:42,444 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:33:49,101 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:33:49,103 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:49,103 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:49,104 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:49,104 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:33:49,104 - INFO - data_ingestion - File already exists
+2026-02-28 20:33:49,171 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:33:56,202 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:33:56,204 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:33:56,204 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:33:56,205 - INFO - common - created directory at:artifacts
+2026-02-28 20:33:56,205 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:33:56,206 - INFO - data_ingestion - File already exists
+2026-02-28 20:33:56,266 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:34:03,514 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:34:03,515 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:34:03,516 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:34:03,517 - INFO - common - created directory at:artifacts
+2026-02-28 20:34:03,517 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:34:03,518 - INFO - data_ingestion - File already exists
+2026-02-28 20:34:03,582 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:34:10,263 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:34:10,265 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:34:10,265 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:34:10,266 - INFO - common - created directory at:artifacts
+2026-02-28 20:34:10,266 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:34:10,267 - INFO - data_ingestion - File already exists
+2026-02-28 20:34:10,341 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:34:17,214 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:34:17,216 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:34:17,216 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:34:17,217 - INFO - common - created directory at:artifacts
+2026-02-28 20:34:17,217 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:34:17,217 - INFO - data_ingestion - File already exists
+2026-02-28 20:34:17,282 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:34:24,276 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:34:24,277 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:34:24,278 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:34:24,278 - INFO - common - created directory at:artifacts
+2026-02-28 20:34:24,279 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:34:24,280 - INFO - data_ingestion - File already exists
+2026-02-28 20:34:24,349 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:34:30,813 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:34:30,815 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:34:30,816 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:34:30,816 - INFO - common - created directory at:artifacts
+2026-02-28 20:34:30,817 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:34:30,817 - INFO - data_ingestion - File already exists
+2026-02-28 20:34:30,981 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:34:38,459 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:34:38,460 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:34:38,461 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:34:38,462 - INFO - common - created directory at:artifacts
+2026-02-28 20:34:38,463 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:34:38,463 - INFO - data_ingestion - File already exists
+2026-02-28 20:34:38,527 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:34:46,300 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:34:46,302 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:34:46,303 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:34:46,303 - INFO - common - created directory at:artifacts
+2026-02-28 20:34:46,304 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:34:46,304 - INFO - data_ingestion - File already exists
+2026-02-28 20:34:46,371 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 28, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1720, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "E:\textsummarizer\venv\Lib\zipfile\__init__.py", line 1777, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 20:44:29,245 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:44:29,258 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:44:29,268 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:44:29,269 - INFO - common - created directory at:artifacts
+2026-02-28 20:44:29,270 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:44:29,270 - INFO - data_ingestion - File already exists
+2026-02-28 20:44:29,406 - INFO - data_ingestion - Extraction complete
+2026-02-28 20:44:29,406 - INFO - main - Stage Data Ingestion stage Completed
+2026-02-28 20:44:29,406 - INFO - main - stageData Transformation stage initiated
+2026-02-28 20:44:29,407 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:44:29,408 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:44:29,409 - INFO - common - created directory at:artifacts
+2026-02-28 20:44:29,409 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-28 20:44:29,970 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 20:44:30,013 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-28 20:44:30,381 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 20:44:30,422 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-28 20:44:30,716 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-28 20:44:31,001 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 20:44:31,363 - ERROR - main - Directory artifacts/data_ingestion/samsum_dataset not found
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 23, in <module>
+    data_ingestion_pipeline.initiate_data_transformation()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "E:\textsummarizer\src\textSummarizer\components\data_transformation.py", line 33, in convert
+    dataset_samsum = load_from_disk(self.config.data_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\textsummarizer\venv\Lib\site-packages\datasets\load.py", line 1559, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory artifacts/data_ingestion/samsum_dataset not found
+2026-02-28 20:47:21,664 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 20:47:21,666 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:47:21,666 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:47:21,666 - INFO - common - created directory at:artifacts
+2026-02-28 20:47:21,667 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 20:47:23,839 - INFO - data_ingestion - file is downloaded
+2026-02-28 20:47:24,128 - INFO - data_ingestion - Extraction complete
+2026-02-28 20:47:24,128 - INFO - main - Stage Data Ingestion stage Completed
+2026-02-28 20:47:24,128 - INFO - main - stageData Transformation stage initiated
+2026-02-28 20:47:24,130 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 20:47:24,130 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 20:47:24,131 - INFO - common - created directory at:artifacts
+2026-02-28 20:47:24,131 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-28 20:47:24,798 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 20:47:24,851 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-28 20:47:25,142 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 20:47:25,202 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-28 20:47:25,496 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-28 20:47:25,786 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 20:47:26,013 - ERROR - main - Directory artifacts/data_ingestion/samsum_dataset not found
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 23, in <module>
+    data_ingestion_pipeline.initiate_data_transformation()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "E:\textsummarizer\src\textSummarizer\components\data_transformation.py", line 33, in convert
+    dataset_samsum = load_from_disk(self.config.data_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\textsummarizer\venv\Lib\site-packages\datasets\load.py", line 1559, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory artifacts/data_ingestion/samsum_dataset not found
+2026-02-28 21:13:01,836 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:01,846 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:01,848 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:01,862 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:01,864 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:01,864 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:02,193 - INFO - data_ingestion - Extraction complete
+2026-02-28 21:13:02,194 - INFO - main - Stage Data Ingestion stage Completed
+2026-02-28 21:13:02,194 - INFO - main - stageData Transformation stage initiated
+2026-02-28 21:13:02,196 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:02,196 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:02,196 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:02,197 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-28 21:13:03,071 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 21:13:03,170 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-28 21:13:03,684 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 21:13:03,733 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-28 21:13:04,092 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-28 21:13:04,502 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 21:13:15,077 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:15,079 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:15,081 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:15,082 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:15,082 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:15,083 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:15,158 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:13:15,236 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:15,237 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:15,238 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:15,239 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:15,239 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:15,239 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:15,305 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:13:24,074 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:24,076 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:24,077 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:24,077 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:24,078 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:24,078 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:24,140 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:13:31,500 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:31,506 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:31,507 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:31,508 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:31,509 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:31,509 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:31,603 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:13:39,066 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:39,068 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:39,068 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:39,069 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:39,069 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:39,069 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:39,143 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:13:46,845 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:46,847 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:46,848 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:46,848 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:46,849 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:46,849 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:46,911 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:13:54,141 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:13:54,143 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:13:54,144 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:13:54,144 - INFO - common - created directory at:artifacts
+2026-02-28 21:13:54,145 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:13:54,145 - INFO - data_ingestion - File already exists
+2026-02-28 21:13:54,202 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:14:00,976 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:14:00,977 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:14:00,978 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:14:00,978 - INFO - common - created directory at:artifacts
+2026-02-28 21:14:00,978 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:14:00,979 - INFO - data_ingestion - File already exists
+2026-02-28 21:14:01,040 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:14:08,135 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:14:08,136 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:14:08,137 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:14:08,137 - INFO - common - created directory at:artifacts
+2026-02-28 21:14:08,138 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:14:08,138 - INFO - data_ingestion - File already exists
+2026-02-28 21:14:08,206 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:14:15,265 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:14:15,268 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:14:15,269 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:14:15,270 - INFO - common - created directory at:artifacts
+2026-02-28 21:14:15,270 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:14:15,271 - INFO - data_ingestion - File already exists
+2026-02-28 21:14:15,336 - ERROR - main - [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 35, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts/data_ingestion\\samsum_dataset/test/data-00000-of-00001.arrow'
+2026-02-28 21:38:04,768 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:38:04,788 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:38:04,790 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:38:04,791 - INFO - common - created directory at:artifacts
+2026-02-28 21:38:04,792 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:38:04,792 - INFO - data_ingestion - File already exists
+2026-02-28 21:38:05,170 - INFO - data_ingestion - Extraction complete
+2026-02-28 21:38:05,170 - INFO - main - Stage Data Ingestion stage Completed
+2026-02-28 21:38:05,171 - INFO - main - stageData Transformation stage initiated
+2026-02-28 21:38:05,173 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:38:05,174 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:38:05,174 - INFO - common - created directory at:artifacts
+2026-02-28 21:38:05,175 - INFO - common - created directory at:artifacts/data_transformation
+2026-02-28 21:38:06,169 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 21:38:06,269 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-02-28 21:38:06,781 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-02-28 21:38:06,882 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-02-28 21:38:07,191 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-02-28 21:38:07,701 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-28 21:38:19,158 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:38:19,161 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:38:19,162 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:38:19,162 - INFO - common - created directory at:artifacts
+2026-02-28 21:38:19,163 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:38:19,163 - INFO - data_ingestion - File already exists
+2026-02-28 21:38:19,233 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 36, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 21:38:19,395 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:38:19,397 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:38:19,398 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:38:19,400 - INFO - common - created directory at:artifacts
+2026-02-28 21:38:19,400 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:38:19,401 - INFO - data_ingestion - File already exists
+2026-02-28 21:38:19,559 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 36, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 21:38:29,286 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:38:29,288 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:38:29,289 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:38:29,290 - INFO - common - created directory at:artifacts
+2026-02-28 21:38:29,290 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:38:29,291 - INFO - data_ingestion - File already exists
+2026-02-28 21:38:29,345 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 36, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-02-28 21:38:37,147 - INFO - main - stageData Ingestion stage initiated
+2026-02-28 21:38:37,149 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-02-28 21:38:37,150 - INFO - common - yaml file:params.yaml loaded successfully
+2026-02-28 21:38:37,150 - INFO - common - created directory at:artifacts
+2026-02-28 21:38:37,151 - INFO - common - created directory at:artifacts/data_ingestion
+2026-02-28 21:38:37,151 - INFO - data_ingestion - File already exists
+2026-02-28 21:38:37,206 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 36, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-03-01 00:00:35,227 - INFO - main - stageData Ingestion stage initiated
+2026-03-01 00:00:35,244 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-01 00:00:35,245 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-01 00:00:35,250 - INFO - common - created directory at:artifacts
+2026-03-01 00:00:35,251 - INFO - common - created directory at:artifacts/data_ingestion
+2026-03-01 00:00:35,251 - INFO - data_ingestion - File already exists
+2026-03-01 00:00:35,635 - INFO - data_ingestion - Extraction complete
+2026-03-01 00:00:35,635 - INFO - main - Stage Data Ingestion stage Completed
+2026-03-01 00:00:35,635 - INFO - main - stageData Transformation stage initiated
+2026-03-01 00:00:35,637 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-01 00:00:35,637 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-01 00:00:35,637 - INFO - common - created directory at:artifacts
+2026-03-01 00:00:35,638 - INFO - common - created directory at:artifacts/data_transformation
+2026-03-01 00:00:36,444 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-01 00:00:36,500 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-01 00:00:36,918 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-01 00:00:36,972 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-01 00:00:37,399 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-01 00:00:37,716 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-01 00:00:46,881 - INFO - main - stageData Ingestion stage initiated
+2026-03-01 00:00:46,884 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-01 00:00:46,884 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-01 00:00:46,885 - INFO - common - created directory at:artifacts
+2026-03-01 00:00:46,885 - INFO - common - created directory at:artifacts/data_ingestion
+2026-03-01 00:00:46,887 - INFO - data_ingestion - File already exists
+2026-03-01 00:00:46,893 - INFO - main - stageData Ingestion stage initiated
+2026-03-01 00:00:46,896 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-01 00:00:46,897 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-01 00:00:46,898 - INFO - common - created directory at:artifacts
+2026-03-01 00:00:46,898 - INFO - common - created directory at:artifacts/data_ingestion
+2026-03-01 00:00:46,898 - INFO - data_ingestion - File already exists
+2026-03-01 00:00:46,980 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 36, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-03-01 00:00:54,903 - INFO - main - stageData Ingestion stage initiated
+2026-03-01 00:00:54,905 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-01 00:00:54,905 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-01 00:00:54,905 - INFO - common - created directory at:artifacts
+2026-03-01 00:00:54,906 - INFO - common - created directory at:artifacts/data_ingestion
+2026-03-01 00:00:54,906 - INFO - data_ingestion - File already exists
+2026-03-01 00:00:54,963 - ERROR - main - [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "E:\textsummarizer\main.py", line 10, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\textsummarizer\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\textsummarizer\src\textSummarizer\components\data_ingestion.py", line 36, in extract_zip_file
+    with zip_ref.open(member) as source, open(target_path, 'wb') as target:
+                                         ^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+2026-03-02 00:58:25,123 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-02 01:05:00,009 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-02 01:05:00,014 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-02 01:05:00,127 - INFO - common - created directory at:artifacts
+2026-03-02 01:05:00,131 - INFO - common - created directory at:artifacts/data_trainer
+2026-03-02 01:11:15,761 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-02 01:11:15,765 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-02 01:11:15,767 - INFO - common - created directory at:artifacts
+2026-03-02 01:11:15,770 - INFO - common - created directory at:artifacts/data_trainer
+2026-03-02 01:14:39,823 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-02 01:14:39,827 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-02 01:14:39,832 - INFO - common - created directory at:artifacts
+2026-03-02 01:14:39,834 - INFO - common - created directory at:artifacts/data_trainer
+2026-03-02 01:23:36,024 - INFO - common - yaml file:config\config.yaml loaded successfully
+2026-03-02 01:23:36,030 - INFO - common - yaml file:params.yaml loaded successfully
+2026-03-02 01:23:36,034 - INFO - common - created directory at:artifacts
+2026-03-02 01:23:36,133 - INFO - common - created directory at:artifacts/data_transformation
+2026-03-02 01:23:37,832 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 01:23:37,902 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+2026-03-02 01:23:41,654 - INFO - _client - HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-02 01:23:41,665 - WARNING - _http - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-02 01:23:41,755 - INFO - _client - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-02 01:23:42,663 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-02 01:23:42,984 - INFO - _client - HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
